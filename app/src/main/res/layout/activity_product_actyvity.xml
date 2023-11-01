@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Product_actyvity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="nhap name product"
+        android:textStyle="bold"
+        android:id="@+id/ed_nameee"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_margin="20sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="nhap gia product"
+        android:textStyle="bold"
+        android:id="@+id/ed_price"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_margin="20sp"/>
+
+    <Spinner
+        android:id="@+id/spcpro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:minHeight="48dp" />
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:orientation="horizontal"
+     android:gravity="center"
+     android:layout_height="wrap_content">
+
+     <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Them"
+         android:layout_marginRight="10dp"
+         android:id="@+id/btnthemPr"
+         />
+     <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="sua"
+         android:layout_marginRight="10dp"
+         android:id="@+id/btnsuaPr"
+         />
+     <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginRight="10dp"
+         android:text="xoa"
+         android:id="@+id/btnxoaPr"
+         />
+
+ </LinearLayout>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvProduct"
+        android:divider="@color/black"
+        android:dividerHeight="10dp"/>
+</LinearLayout>
